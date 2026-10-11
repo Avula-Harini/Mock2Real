@@ -1,0 +1,32 @@
+PYTHON PROGRAMMING
+
+Python lists are mutable ordered collections.
+Tuples are immutable ordered collections.
+Dictionaries store key-value pairs.
+Python supports object-oriented programming.
+
+OBJECT-ORIENTED PROGRAMMING
+
+Encapsulation groups data and methods together.
+Inheritance allows classes to reuse behavior.
+Polymorphism lets objects respond differently
+to the same interface.
+Abstraction hides implementation details.
+
+DATABASE MANAGEMENT
+
+SQL is used to manage relational databases.
+INNER JOIN returns matching rows from tables.
+LEFT JOIN keeps all rows from the left table.
+Normalization helps reduce data redundancy.
+
+WEB DEVELOPMENT
+
+FastAPI is a Python web framework for building APIs.
+React is a JavaScript library for user interfaces.
+REST APIs allow applications to exchange data.
+
+HR INTERVIEW
+
+The STAR method means Situation, Task, Action, Result.
+Candidates can use STAR to structure behavioral answers.
