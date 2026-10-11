@@ -3,6 +3,7 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from pydantic import BaseModel
 from uuid import uuid4
 from backend.database import supabase
+#from backend.member3.ai_routes import router as ai_router
 from backend.speech_to_text import transcribe_audio
 import os
 import tempfile
@@ -20,6 +21,7 @@ from backend.audio_analysis import (
 
 
 app = FastAPI(title="Mock2Real Backend")
+#app.include_router(ai_router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
