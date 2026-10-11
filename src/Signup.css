@@ -1,0 +1,118 @@
+/* Signup Page */
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f7f5ff, #eee8ff);
+  font-family: Arial, sans-serif;
+}
+
+/* Signup Card */
+.signup-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(76, 29, 149, 0.12);
+}
+
+/* Heading */
+.signup-card h1 {
+  margin-bottom: 12px;
+  color: #4c1d95;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Description */
+.signup-card > p {
+  margin-bottom: 28px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Labels */
+.signup-card label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #292344;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.signup-card input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd6fe;
+  border-radius: 9px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.signup-card input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+/* Create Account Button */
+.signup-card button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #6d28d9;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-card button:hover {
+  background: #4c1d95;
+}
+
+/* Login Link */
+.signup-card .signin-text {
+  margin-top: 24px;
+  margin-bottom: 0;
+  color: #6b7280;
+  font-size: 13px;
+  text-align: center;
+}
+
+.signup-card a {
+  color: #6d28d9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-card a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 28px 22px;
+  }
+
+  .signup-card h1 {
+    font-size: 26px;
+  }
+}
+.signup-card h2 {
+  color: #4c1d95;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
