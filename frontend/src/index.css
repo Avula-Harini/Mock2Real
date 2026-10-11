@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+@layer utilities {
+  /* Print-specific layout & A4 paper optimizations */
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm 15mm 15mm;
+    }
+
+    /* Force background colors and graphical elements to print sharply */
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    html, body {
+      background-color: #ffffff !important;
+      color: #0f172a !important;
+      font-size: 10.5pt !important;
+      line-height: 1.4 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: visible !important;
+    }
+
+    #root {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      width: 100% !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+
+    /* Hide web navigation, floating bars, and interactive buttons */
+    header,
+    nav,
+    .no-print,
+    .print\\:hidden {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
+    /* Reset full width for paper */
+    main {
+      max-width: 100% !important;
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Prevent breaking elements across printed pages */
+    .break-inside-avoid,
+    .print-avoid-break {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    /* Force all accordion contents to stay visible in print */
+    .print-always-show {
+      display: block !important;
+      visibility: visible !important;
+      height: auto !important;
+      opacity: 1 !important;
+    }
+  }
+}

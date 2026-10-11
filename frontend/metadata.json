@@ -1,0 +1,6 @@
+{
+  "name": "Intervue AI - Mock Interview Platform",
+  "description": "Professional AI mock interview interface with real-time video/audio preview, structured question flow, live timer, and comprehensive performance analysis report.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
